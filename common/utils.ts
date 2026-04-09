@@ -122,7 +122,7 @@ export function formatQueryResultAsTable(rows: any[], maxRows: number = 100): st
   columns.forEach(col => {
     columnWidths[col] = Math.max(
       col.length,
-      ...displayRows.map(row => String(row[col] || '').length)
+      ...displayRows.map(row => String(row[col] ?? '').length)
     );
     // Limitar ancho máximo para evitar salidas muy anchas
     columnWidths[col] = Math.min(columnWidths[col], 50);
@@ -144,7 +144,7 @@ export function formatQueryResultAsTable(rows: any[], maxRows: number = 100): st
   displayRows.forEach(row => {
     result += '| ';
     result += columns.map(col => {
-      let value = String(row[col] || '');
+      let value = String(row[col] ?? '');
       if (value.length > columnWidths[col]) {
         value = value.substring(0, columnWidths[col] - 3) + '...';
       }
