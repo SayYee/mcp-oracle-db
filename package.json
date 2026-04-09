@@ -1,14 +1,14 @@
 {
-  "name": "@grec0/mcp-oracle-db",
-  "version": "0.1.4",
-  "description": "MCP server para integración completa con Oracle Database",
+  "name": "@sayyi/mcp-oracle-db",
+  "version": "0.1.5",
+  "description": "MCP server for Oracle Database integration (fork with NUMBER(0) display fix)",
   "license": "MIT",
-  "author": "@grec0",
-  "homepage": "https://github.com/gcorroto/mcp-oracle-db",
-  "bugs": "https://github.com/gcorroto/mcp-oracle-db/issues",
+  "author": "@sayyi",
+  "homepage": "https://github.com/SayYee/mcp-oracle-db",
+  "bugs": "https://github.com/SayYee/mcp-oracle-db/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gcorroto/mcp-oracle-db.git"
+    "url": "git+https://github.com/SayYee/mcp-oracle-db.git"
   },
   "keywords": [
     "mcp",
